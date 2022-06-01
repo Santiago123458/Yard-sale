@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard sale |Contraseña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/logos/favicon_bota_fora.svg">
+</head>
+<body>
+    <header class="header">
+        <img src="../assets/logos/logo_yard_sale.svg" alt="logo_yard_sale" class="logo-header">
+        <nav class="nav-var">
+            <ul class="nav-var-2">
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">Contact</a></li>
+                <li class="items-selected"><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <p>My perfil</p>
+            <div class="profile-content">
+                <img src="../assets/logos/favicon_bota_fora.svg" alt="imagen de perfil">
+            </div>
+        </div>
+    </header>
+ 
+    <div class="login">
+        <div class="form-container">
+            <img src="../assets/logos/logo_yard_sale.svg" alt="logo yard sale" class="logo">
+            
+            <h1 class="title">¡Crear nueva contraseña!</h1>
+            <p class="description">Ingrese la nueva contraseña para su cuenta</p>
+
+            <form action="/" class="form_password">
+                <label for="pasword" class="label">
+                    <span>Ingresar contraseña</span> 
+                    <input type="password" name="password" id="pasword" placeholder="******" class="input_password">
+                </label>
+                <label for="repeat-password" class="label">
+                    <span>Repetir contraseña</span> 
+                    <input type="password" name="repeat-password" id="repeat-password" placeholder="******" class="input_password">
+                </label>
+                <input type="submit" value="Confirmar nueva contraseña" class="button_confirm" href="#">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
