@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: var(--white);
+}
+:root{
+    --Very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --small: 14rem;
+    --medium: 16rem;
+    --large: 18rem;
+}
+/*estos son los estilos de la etiqueta header */
+.container-header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px inset var(--Very-light-pink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-menu img{
+    margin-left: 12px;
+}
+.logo img{
+    width: 115px;
+}
+.container-kart img{
+    margin-right: 12px;
+}
+/* estos son los estilos de la etiqueta main */
+.container-dates{
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 3fr 44%;
+    gap: 12px;
+    justify-items: center;
+    align-items: center;
+}
+.title{
+    margin: 30px 12px;
+    justify-self: left;
+}
+.form-dates{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 12px;
+}
+.label-dates{
+    width: 94vw;
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+}
+.label-dates span{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
+}
+.input-dates{
+    width: 97%;
+    background: var(--Text-input-field);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+}
+.button-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.button-container button{
+    width: 90%;
+    margin-bottom: 12px;
+    background: var(--Hospital-green);
+    color: var(--white);
+    font-size: 2rem;
+    border: none;
+    border-radius: 12px;
+    padding:20px;
+}
+/*medias de las pantallas */
+@media (max-width:380px ) {
+    .container-dates{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 3fr 30%;
+        gap: 12px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+@media (min-width:700px) {
+    .flex-dates{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-dates{
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 3fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        margin: 30px 12px;
+        justify-self: left;
+    }
+    .form-dates
+    {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .label-dates{
+        width: 50vw;
+        margin-bottom: 32px;
+    }
+    .label-dates span{
+        font-size: 1.6rem;
+        font-weight: bold;
+        align-self:left;
+        margin-bottom: 6px;
+    }
+    .input-dates{
+        background: var(--Text-input-field);
+        border: none;
+        border-radius: 12px;
+        padding: 15px;
+    }
+    .button-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-container button{
+        width: 40%;
+        margin-bottom: 12px;
+        background: var(--Hospital-green);
+        color: var(--white);
+        font-size: 2rem;
+        border: none;
+        border-radius: 12px;
+        padding:20px;
+    }
+
+    
+}
