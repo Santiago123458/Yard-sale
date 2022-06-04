@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: var(--white);
+}
+:root{
+    --Very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --small: 14rem;
+    --medium: 16rem;
+    --large: 18rem;
+}
+/*estilos de la estiqueta header */
+.header{
+    background:var(--white);
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    border-bottom: 3px inset;
+}
+.logo-header{
+    width: 200px;
+    margin-left: 30px;
+    align-self: center;
+}
+.nav-var{
+    align-self: center;
+}
+.nav-var-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.items-selected{
+    list-style-type: none;
+    color: var(--Hospital-green);
+    font-size: 2rem;
+    background: white;
+    padding: 1px auto ;
+    border-radius: 12px;
+    border: 3px solid var(--Hospital-green);
+    padding: 2px 5px;
+    margin: 0px 15px;
+}
+.items-selected a{
+    text-decoration: none;
+    color: #dddd;
+}
+.items a{
+    text-decoration: none;
+    color: #dddd;
+}
+.items{
+    list-style-type: none;
+    color: #dddd;
+    font-size: 2rem;
+    background: white;
+    padding: 5px auto ;
+    margin: 0px 15px;
+}
+.items:hover{
+    list-style-type: none;
+    color: var(--Hospital-green);
+    font-size: 2rem;
+    background: white;
+    padding: 1px auto ;
+    border-radius: 12px;
+    border: 3px solid var(--Hospital-green); 
+}
+.profile-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4rem;
+}
+.profile-container p{
+    font-size: small;
+    color: #dddd;
+}
+.profile-content{
+    width: 30px;
+    height: 40px;
+    margin-left: 8px;
+    background: var(--Text-input-field);
+    border-radius: 100%;
+    border: 2px solid #dddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-content img{
+    width: 20px;
+    left: 5px;
+    top: 4px;
+}
+/*este son los estilos de el main */
+.container-main{
+    margin: 25px;
+}
+.container-icons{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(5 , 1fr) ;
+    grid-template-rows: repeat(3 , 1fr) ;
+    gap: 12px;
+}
+/*estos son los estilos de las cartas */
+.container-image{
+    display: flex;
+    justify-content: center;
+}
+.image-product{
+    width: 250px;
+    height: 120px;
+    border: none;
+    border-radius: 25px;
+}
+.container-content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.desciption{
+    margin: 0px 18px 0px 0px;
+}
+.precio{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.product{
+    font-size: 1.2rem;
+    color: var(--Very-light-pink);
+}
+.figure{
+    cursor: pointer;
+}
+/*estos son los media queres*/
+@media (max-width:600px) {
+    .items{
+        display: none;
+    }
+    .items-selected{
+        display: none;
+    }
+    /*este son los estilos de el main */
+.container-main{
+    margin: 15px;
+}
+.container-icons{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(2 , 1fr) ;
+    grid-template-rows: repeat(5 , 1fr) ;
+    gap: 12px;
+}
+/*estos son los estilos de las cartas */
+.container-image{
+    display: flex;
+    justify-content: center;
+}
+.image-product{
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+}
+.container-content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.desciption{
+    margin: 0px 18px 0px 0px;
+}
+.precio{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.product{
+    font-size: 1.2rem;
+    color: var(--Very-light-pink);
+}
+.figure{
+    cursor: pointer;
+}  
+}
+@media (min-width:600px) {
+    .container-icons{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:repeat(4 , 1fr) ;
+        grid-template-rows: repeat(4 , 1fr) ;
+        gap: 12px;
+    }
+    .image-product{
+        width: 250px;
+        height: 180px;
+        border: none;
+        border-radius: 25px;
+    }
+}
+@media (min-width:1500px) {
+    .container-icons{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:repeat(5 , 1fr) ;
+        grid-template-rows: repeat(4 , 1fr) ;
+        gap: 12px;
+    }
+    .image-product{
+        width: 270px;
+        height: 190px;
+        border: none;
+        border-radius: 25px;
+    }
+}
